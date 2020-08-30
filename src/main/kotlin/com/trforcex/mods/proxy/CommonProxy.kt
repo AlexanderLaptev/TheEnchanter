@@ -29,7 +29,10 @@ open class CommonProxy {
         @SubscribeEvent
         @JvmStatic
         fun registerItems(event: RegistryEvent.Register<Item>) {
-            event.registry.register(ModContent.blockTheEnchanter.itemBlock)
+            val registry = event.registry
+            registry.register(ModContent.blockTheEnchanter.itemBlock)
+
+            for (upgrade in ModContent.upgrades) registry.register(upgrade)
         }
     }
 }

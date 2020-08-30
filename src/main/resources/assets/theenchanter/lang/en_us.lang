@@ -2,3 +2,8 @@
 ####    BLOCKS    ####
 ######################
 tile.theenchanter.the_enchanter.name=The Enchanter
+
+#####################
+####    ITEMS    ####
+#####################
+item.theenchanter.vanilla_upgrade.name=Enchanting Table Upgrade

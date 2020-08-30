@@ -34,7 +34,7 @@ class BlockTheEnchanter : BlockContainer(Material.ROCK, MapColor.PURPLE) {
         registryName = ModUtils.makeRL(REG_NAME)
         lightOpacity = 0
         creativeTab = CreativeTabs.DECORATIONS
-        translationKey = ModUtils.makeTranslationKey(this)
+        translationKey = ModUtils.makeTranslationKey(registryName!!)
 
         itemBlock.registryName = registryName
     }
@@ -73,7 +73,7 @@ class BlockTheEnchanter : BlockContainer(Material.ROCK, MapColor.PURPLE) {
     }
 
     fun initModels() {
-        ModelLoader.setCustomModelResourceLocation(itemBlock, 0, ModUtils.makeModelRL("$registryName"))
+        ModelLoader.setCustomModelResourceLocation(itemBlock, 0, ModUtils.makeModelRL(registryName!!))
     }
 
 //    override fun createNewTileEntity(worldIn: World, meta: Int): TileEntity? = TileEntityTheEnchanter()
