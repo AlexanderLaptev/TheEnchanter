@@ -1,0 +1,8 @@
+[{
+  "modid": "theenchanter",
+  "name": "The Enchanter",
+  "description": "A worthy alternative to the vanilla enchanting table.",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "authorList": ["TheRealForceX"]
+}]
